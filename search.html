@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pokepedia Search</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="landingpage">
+        <div class="HeaderLayout">
+            <div class="PokemonEncyclopedia-layout">
+                <div id="pokemon-logo-resize-search">
+                    <a href="index.html">
+                        <img src="images/pokemonlogo.webp" alt="Pokemon Logo">
+                    </a>
+                </div>
+            </div>
+            <div class="searchbar">
+                <form action="" method="get" onsubmit="search(event)">
+                    <input id="input" type="text" name="pokemon" autocomplete="off" placeholder="Search...">
+                    <button id="submit">GO</button>
+                </form>
+            </div>
+            <p>Type in the name or ID of any Pokémon you like and learn about its abilities and stats! See <a href="allpoke.html">All Pokémon</a> for ideas.</p><section id="container">   
+        </div>
+            <div id="pokeCard" pokeCard>
+                <div id="pokeName" pokeName></div>
+                <div id="pokeType" pokeType></div>
+                <div id="imgContainer" imgContainer>
+                    <img id="pokeImg" pokeImg src=""/>
+                </div>
+                <div id="pokeID" pokeID></div>
+                <div id="pokeAbility" pokeAbility></div>
+                <div id="pokeHP" pokeHP></div>
+                <div id="pokeAttack" pokeAttack></div>
+                <div id="pokeSpecialAttack" pokeSpecialAttack></div>
+                <div id="pokeDef" pokeDef></div>
+                <div id="pokeSpecialDef" pokeSpecialDef></div>
+                <div id="pokeSpeed" pokeSpeed></div>
+            </div>
+        </section>
+    </div>
+    <!-- <script src="https://pokeapi.co/api/v2/pokemon?limit=151"></script> -->
+    <script src="script.js"></script>
+</body>
+
+</html>

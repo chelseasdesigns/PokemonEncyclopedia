@@ -1,0 +1,251 @@
+/*Body*/
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f5f5f5;
+}
+
+a {
+    text-decoration: none;
+    color: #b8a121;
+    transition: all 0.1s ease-in;
+}
+
+a:hover {
+    color: #ebd765;
+    font-weight: bolder;
+}
+
+a:active {
+    font-size: 70%;
+}
+
+/*Landing Page*/
+.landingpage {
+    display: block;
+    margin: 0 auto;
+    padding: 2%;
+}
+
+.PokemonEncyclopedia-layout {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Landing Page: IMG Styles */
+.pokemon-logo-resize img {
+    display: block;
+    margin: 0 auto;
+    width: 35%;
+    height: auto;
+    padding-top: 5%;
+}
+
+#pokemon-logo-resize-search img {
+    width: 150%;
+    height: auto;
+    padding-left: 20%;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.pokeball-resize img {
+    display: block;
+    margin: 0 auto;
+    width: 8%;
+    height: auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    transition: all 0.7s ease-in-out;
+}
+
+.pokeball-resize img:hover {
+    scale: 130%;
+    transform: rotate(360deg);
+}
+
+.pokeball-resize img:active {
+    scale: 3%;
+}
+
+/* Landing Page: Text Styles */
+h1 {
+    color: #2757FF;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+p {
+    text-align: center;
+    color: #2757FF;
+    font-weight: 600;
+    padding: 2%;
+    grid-column-start: 3;
+    grid-column-end: 9;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+/* Search Bar and Pokemon Logo Placement */
+.HeaderLayout {
+    margin: auto;
+    padding-top: 2%;
+    display: grid;
+    grid-template-columns: repeat(9, 10%);
+    grid-auto-rows: 30px;
+}
+
+.searchbar {
+    position: relative;
+    left: 35%;
+    grid-column-start: 7;
+    grid-column-end: 11;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+/* Search Bar Styles */
+#input {
+    border: 2px solid #2757FF;
+    box-shadow: 0 2px 0 #006599;
+    font-size: 20px;
+    border-radius: 50px;
+    padding: 1% 2%;
+}
+  
+
+/* Search Bar Button Styles */
+#submit {
+    border: 2px solid #2757FF;
+    box-shadow: 0 2px 0 #006599;
+    border-radius: 50px;
+    font-size: 20px;
+    padding: 1% 2%;
+    text-align: center;
+    background-color: white;
+    transition: all .1s linear;
+}
+
+#submit:hover{
+    box-shadow: 0 6px 0 #006599;
+    color: white;
+    background-color: #4F76FF;
+    cursor: pointer;
+}
+
+#submit:active {
+    background-color: #3b58c0;
+    transform: scale(90%);
+}
+
+/* Result Styles */
+#pokeCard {
+    display: grid;
+    grid-template-columns: repeat(9, 10%);
+    grid-auto-rows: 30px;
+    border-width: 100px;
+    border-color: black;
+}
+
+#pokeName {
+    color: #112a83;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    right: 15%;
+    font-size: 200%;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+#pokeType {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 5px;
+    position: relative;
+    right: 15%;
+    font-size: 100%;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+#imgContainer {
+    align-content: center;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 8;
+}
+
+#imgContainer img{
+    border-radius: 5%;
+    width: 70%;
+    height: auto;
+}
+
+#pokeID {
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+#pokeAbility {
+    grid-column-start: 6;
+    grid-column-end: 10;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+#pokeHP {
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+#pokeAttack {
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 8;
+    grid-row-end: 9;
+}
+
+#pokeSpecialAttack {
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 9;
+    grid-row-end: 10;
+}
+
+#pokeDef {
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 10;
+    grid-row-end: 11;
+}
+
+#pokeSpecialDef {
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 11;
+    grid-row-end: 12;
+}
+
+#pokeSpeed {
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 12;
+    grid-row-end: 13;
+}
+
+/* Displaying All Pokemon: Style */
+.allpoke-container {
+    margin: 3%;
+    
+}
